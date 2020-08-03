@@ -93,7 +93,7 @@ graph.WASH<-ggplot(data=WASH,aes(x = factor(hour, level = level_order)))+
 #setting the 3 graphs side by side for a better comparison
 grid.arrange(graph.CHI,graph.NYC,graph.WASH,ncol=3)  
 
-#The graph shows the rush hour for each of the cities regardless of the gender or user type, as we are interested here in knowing whether we need to backup some of our stations with extra bikes or the existing is enough already. Surprisingly the 3 cities doens't have the same rush hour.
+#The graph shows the rush hour for each of the 3 cities (Washington,Newyork and Chicago) each separately regardless of the gender or user type, as we are interested here in knowing whether we need to provide a couple of our stations with extra bikes or whether the existing is enough already. Its worth mentioning that the 3 cities doens't have the same rush hour.
 
 ```
 
