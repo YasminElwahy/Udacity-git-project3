@@ -1,15 +1,15 @@
 ### Date created
-Include the date you created this project and README file.
+1st of July 2020.
 
 ### Project Title
-Replace the Project Title
+Exploring Bikeshare data
 
 ### Description
-Describe what your project is about and what it does
+Provided exploratory analysis using the summary statistics of the data an prepared graphs
 
 ### Files used
-Include the files used
+chicago (1) new-york-city (1) washington (1)
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://github.com/khaledimad/Explore-US-Bikeshare-Data
 
