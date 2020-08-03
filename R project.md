@@ -67,28 +67,28 @@ level_order <- c('1AM', '2AM', '3AM', '4AM', '5AM','6AM', '7AM', '8AM', '9AM', '
 
 #Graph for each of the 3 cities
 graph.CHI<-ggplot(data=CHI,aes(x = factor(hour, level = level_order)))+
-  geom_histogram(aes(y = ..count..),stat = "count",color='black',fill='dark red')+
+  geom_histogram(aes(y = ..count..),stat = "count",color='White',fill='dark red')+
   scale_y_continuous(breaks = seq(0,35000,2000))+
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.7, hjust=1))+
   ggtitle('Chicago counts versus time ')+
   xlab('Hour of starting the trip')+
-  ylab('Number of riders')
+  ylab('# of users')
 
 graph.NYC<-ggplot(data=NYC,aes(x = factor(hour, level = level_order)))+
-  geom_histogram(aes(y = ..count..),stat = "count",color='black',fill='dark blue')+
+  geom_histogram(aes(y = ..count..),stat = "count",color='White',fill='dark blue')+
   scale_y_continuous(breaks = seq(0,35000,2000))+
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.7, hjust=1))+
   ggtitle('New York city counts versus time ')+
   xlab('Hour of starting the trip')+
-  ylab('Number of riders')
+  ylab('# of users')
 
 graph.WASH<-ggplot(data=WASH,aes(x = factor(hour, level = level_order)))+
-  geom_histogram(aes(y = ..count..),stat = "count",color='black',fill='dark green')+
+  geom_histogram(aes(y = ..count..),stat = "count",color='White',fill='dark green')+
   scale_y_continuous(breaks = seq(0,35000,2000))+
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.7, hjust=1))+
   ggtitle('Washonton DC counts versus time ')+
   xlab('Hour of starting the trip')+
-  ylab('Number of riders')
+  ylab('# of users')
 
 #setting the 3 graphs side by side for a better comparison
 grid.arrange(graph.CHI,graph.NYC,graph.WASH,ncol=3)  
